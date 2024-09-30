@@ -1,0 +1,628 @@
+:root{
+    --primary-color: #002f68;
+    --secondary-color: #123f7a;
+    --tertiary-color: #244e8c;
+    --text-color: #fff;
+    --text-color-two: #ffffffb4;
+    --text-color-three: #7a99de;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'SUSE', sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(200deg, var(--tertiary-color) , var(--secondary-color), var(--primary-color));
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 3rem;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.button-close{
+    display: none;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 4.5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.menu li:hover{
+    text-shadow: var(--text-color) 1px 0 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.btn-cv{
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.btn-cv:hover{
+    background-color: var(--tertiary-color);
+}
+
+
+h1{
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    width: 100%;
+    margin-bottom: 2rem;
+    height: 0.1rem;
+    background-color: var(--text-color-two);
+    border: none;
+}
+
+.section-style{
+    margin: 0 2rem;
+    max-width: 100rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.others-projects{
+    max-width: 110rem;
+}
+
+.hidden{
+    opacity: 10;
+    transform: translateY(50px);
+    transition: opacity 1s, ease-out, transform 1s ease-out; 
+}
+
+.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text-presentation{
+    gap: 2rem;
+}
+
+.text-title{
+    font-size: 2rem;
+    color: var(--text-color);
+    text-shadow: var(--text-color) 1px 0 10px;
+}
+
+.text-subtitle{
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+.text-subtitle-others{
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+.text-subtitle-others:hover{
+    color: var(--text-color-three);
+}
+
+.text-referencia{
+    color: var(--text-color-three);
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.text-referencia:hover{
+    text-decoration: underline;
+}
+
+.text-repositorie{
+    font-size: 2.5rem;
+    color: var(--text-color-three);
+}
+
+.text-repositorie:hover{
+    color: var(--text-color);
+}
+
+.text-name{
+    font-size: 7rem;
+    color: var(--text-color);
+}
+
+.text-description{
+    font-size: 1.8rem;
+    color: var(--text-color-two);
+}
+
+.list-accounts-profile{
+    display: flex;
+    position: fixed;
+    bottom: 8rem;
+    left: 5rem;
+    flex-direction: column;
+    list-style: none;
+    gap: 2rem;
+}
+
+.list-accounts-profile li a:hover{
+    color: var(--text-color);
+}
+
+.about-me{
+    gap: 5rem;
+} 
+
+.about-me p{
+    font-size: 1.8rem;
+    color: var(--text-color-two);
+}
+
+.container-top{
+    display: flex;
+    max-width: 85rem;
+    flex-direction: row;
+    line-height: 3rem;
+    gap: 2rem;
+}
+
+.section-title{
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.image-me img{
+    width: 30rem;
+    height: 30rem;
+    margin-top: 8rem;
+    border-radius: 1rem;
+}
+
+.container-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.list-skills{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.list-skills li{
+    font-size: 1.8rem;
+    color: var(--text-color-three);
+}
+
+.list-soft-skills{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.list-soft-skills li{
+    font-size: 1.8rem;
+    color: var(--text-color-three);
+}
+
+.list-experience{
+    display: flex;
+    margin-top: 2rem;
+    max-width: 53rem;
+    flex-direction: column;
+    list-style-type: '▹';
+    padding-left: 2rem;
+    gap: 1rem;
+}
+
+.list-experience li{
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.list-projects{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 2rem;
+    list-style: none;
+}
+
+.content-project{
+    display: flex;
+    gap: 3rem;
+}
+
+.image-project{
+    width: 60rem;
+    height: 35rem;
+    border-radius: 1rem;
+}
+
+.image-project:hover{
+    box-shadow: var(--text-color) 1px 0 10px;
+    cursor: pointer;
+}
+
+.description-project{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2rem;
+    padding-top: 4rem;
+}
+
+.container-description{
+    position: relative;
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    text-align: justify;
+    padding: 2rem;
+}
+
+.list-technologies{
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    list-style: none;
+    font-size: 1.8rem;
+    color: var(--text-color-three);
+}
+
+.list-links-projects{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.list-links-projects li a:hover{
+    color: var(--text-color-two);
+}
+
+.list-others-projects{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+}
+
+.list-others-projects li{
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.list-repositorie{
+    display: flex;
+    list-style: none; 
+}
+
+.list-repositorie li{
+    display: flex; 
+    flex-direction: row;
+}
+
+.icons{
+    font-size: 4rem;
+    color: var(--text-color);
+}
+
+.btn-more-projects{
+    width: 30rem;
+    height: 6rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.btn-more-projects:hover{
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+#others-projects .cover{
+    display: none ;
+}
+
+
+
+/* Contact */
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.form-contact{
+    width: 70rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+}
+
+label{
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+
+input{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.8rem;
+}
+
+textarea{
+    padding: 1rem;
+    height: 15rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.8rem;
+}
+
+.btn-submit{
+    width: 30rem;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.btn-submit:hover{
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    font-size: 1.8rem;
+    margin-top: 5rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2rem 5rem;
+    color: var(--text-color);
+}
+
+.list-accounts-profile-footer{
+    display: none;
+}
+
+
+@media (max-width: 767px){
+    
+    .menu {
+        display: none;
+        position: fixed;
+        background-color: var(--tertiary-color);
+        z-index: 1;
+        top: 0;
+        right: 0; 
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        gap: 5.5rem;
+    }
+
+    .button-close{
+        display: flex;
+    }
+
+    .text-name {
+        font-size: 3.5rem;
+    }
+
+    .menu-toggle {
+        display: flex; /* Mostrar el botón hamburguesa */
+    }
+
+    .menu.show { /* Clase que se agrega cuando el menú se despliega */
+        display: flex;
+    }
+
+    .container-top {
+        flex-wrap: wrap;
+    }
+
+    .list-skills, .list-soft-skills {
+        flex-wrap: wrap;
+    }
+
+    .image-project {
+        display: none;
+    }
+
+    .list-projects {
+        gap: 0;
+    }
+
+    .content-project {
+        flex-direction: column;
+    }
+
+    .image-me{
+        margin: 0 auto;
+    }
+
+    .description-project {
+        border-radius: 1rem;
+        align-items: start;
+        padding: 3rem;
+        background-image: url('../images/projects/todo-react.jpg'),
+                          linear-gradient(0deg, var(--tertiary-color), var(--secondary-color), var(--primary-color));
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+
+    .form-contact {
+        width: 100%;
+    }
+
+    .list-accounts-profile {
+        display: none;
+    }
+
+    .list-accounts-profile-footer {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+    }
+    
+    .list-accounts-profile-footer li a {
+        font-size: 4rem;
+    }
+
+    .list-accounts-profile-footer li a:hover{
+        color: var(--text-color);
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .menu {
+        display: none;
+        position: fixed;
+        background-color: var(--tertiary-color);
+        z-index: 1;
+        top: 0;
+        right: 0; 
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        gap: 5.5rem;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+
+    .button-close{
+        display: flex;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .image-project {
+        display: none;
+    }
+
+    .description-project {
+        width: 60rem;
+        height: 30rem;
+        align-items: start;
+        border-radius: 1rem;
+        padding: 3rem;
+        background-image: url('../images/projects/todo-react.jpg'),
+                          linear-gradient(0deg, var(--tertiary-color), var(--secondary-color), var(--primary-color));
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+
+    .list-accounts-profile {
+        display: none;
+    }
+
+    .list-accounts-profile-footer {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+    }
+    
+    .list-accounts-profile-footer li a {
+        font-size: 4rem;
+    }
+
+    .list-accounts-profile-footer li a:hover{
+        color: var(--text-color);
+    }
+    
+}
+
+
+
+

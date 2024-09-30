@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png">
+    <title>REZMA</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init({
+            publicKey: "w3xh6MGAMsQNymnkE",
+        });
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>REZMA</h1>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="menu">
+                <button class="button-close"><i class="fa-solid fa-xmark"></i></button>                
+                <li><a href="#about-me">Acerca de mi</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><button class="btn-cv">Curriculum</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <ul class="list-accounts-profile">
+            <li>
+                <a class="text-referencia" href="https://www.linkedin.com/in/ramses-juarez" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a class="text-referencia" href="https://github.com/RezmaParadox " target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a class="text-referencia" href="mailto:gibran.juarez03@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+
+        <section id="presentation" class=" section-style text-presentation hidden">
+            <p class="text-title">Hola, mi nombre es</p>
+            <h1 class="text-name">Gibran Ramsés Juárez Loyo<br>
+                Desarrollador Web
+            </h1>
+            <span class="text-description">
+                Soy ingeniero en sistemas, con experiencia como desarrollador web front-end. <br>
+                Continuamente estoy aprendiendo y mejorando mis habilidades para desarrollar <br>
+                soluciones en el mundo de la programación. 
+            </span>
+            
+            <!-- <ul class="list-accounts">
+                <li>
+                    <a class="text-referencia" href="www.linkedin.com/in/ramses-juarez">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="text-referencia" href="https://github.com/RezmaParadox">
+                        <i class="fa-brands fa-github"></i></a>
+                    </li>
+                <li>
+                    <a class="text-referencia" href="gibran.juarez03@gmail.com">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </li>
+            </ul> -->
+        </section>
+
+        <section id="about-me" class=" section-style about-me hidden" >
+            
+            <div class="container-top">
+                <div>
+                    <h2 class="section-title">
+                        - Acerca de mi
+                    </h2><hr>
+                    <p>
+                        Me considero un apasionado por el mundo de la programación.
+                        Por ello me encuentro constantemente aprendiendo y mejorando mis habilidades, 
+                        para poder desarrollar soluciones eficientes que puedan ser utilizadas en el mundo real.
+                    </p>
+                    <p>
+                        Tego experiencia como desarrollador web, gracias a mis practicas profesionales 
+                        y al desarrollo de proyectos realizados para mejorar mis habilidades.   
+                        Por otro lado, he trabajado en proyectos personales que se me ha otorgado la 
+                        confianza para poder llevarlos a cabo.
+                    </p>
+                </div>
+                <figure class="image-me">
+                    <img src="images/image-me.jpg" alt="foto-de-perfil">
+                </figure>
+            </div>
+
+            <div class="container-bottom">
+                <p>Algunas de las tecnologias con las que he trabajado son:</p>
+                <ul class="list-skills">
+                    <li>HTML <icon class="fa-brands fa-html5"></icon></li>
+                    <li>CSS <icon class="fa-brands fa-css3-alt"></icon></li>
+                    <li>JavaScript <icon class="fa-brands fa-js"></icon></li>
+                    <li>Java <icon class="fa-brands fa-java"></icon></li>
+                    <li>MySQL</li>
+                    <li>Vue.js <icon class="fa-brands fa-vuejs"></icon></li>
+                    <li>Nuxt <icon class="fa-brands fa-nuxt"></icon></li>
+                    <li>React <icon class="fa-brands fa-react"></icon></li>
+                    <li>Node.js <icon class="fa-brands fa-node-js"></icon></li>
+                    <li>Git <icon class="fa-brands fa-git-alt"></icon></li>
+                </ul>
+
+                <p>Habilidades que poseo:</p>
+                <ul class="list-soft-skills">
+                    <li>Trabajo en equipo</li>
+                    <li>Adaptabilidad</li>
+                    <li>Capacidad de aprendizaje</li>
+                    <li>Responsabilidad</li>
+                    <li>Comprometido</li>
+                </ul>
+            </div>           
+        </section>
+
+        <section id="experience" class=" section-style experience hidden">
+            <h2 class="section-title">- Experiencia</h2><hr>
+            <h3 class="text-subtitle">Desarrollador Web 
+                <a class="text-referencia" href="https://devitm.com"> 
+                    @Devitm
+                </a>
+            </h3>
+            <p class="text-description"> Febrero 2024 - Julio 2024</p>
+            <ul class="list-experience">
+                <li>Recibí capacitación en el lenguaje de programación Vue.js y
+                    en el framework Nuxt.js.</li>
+                <li>Durante mi período de prácticas, desarrollé un sistema de
+                    gestión de información para el departamento de recursos
+                    humanos.</li>
+                <li>Al término de mi proyecto de prácticas, estuve involucrado
+                    en el desarrollo de un demo de una plataforma de
+                    ecommerce para una cadena de supermercados.</li>
+                <li>
+                    Trabajé siguiendo la metodología Scrum para organizar mis
+                    tareas y objetivos.
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects" class=" projects section-style hidden">
+            <h2 class="section-title">- Proyectos</h2><hr>
+            <ul class="list-projects">
+                <li class="content-project">
+                    <figure>
+                        <img class="image-project" src="images/projects/todo-react.jpg" alt="imagen-del-proyecto">
+                    </figure>
+                    
+                    <div class="description-project">
+                        <h3 class="text-subtitle">Lista de tareas</h3>
+                        <figure class="container-description">
+                            <p class="text-description">Una aplicación de lista de tareas creado con React
+                                y cuenta con conexión a una base de datos.
+                            </p>
+                        </figure>
+
+                        <ul class="list-technologies">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>MySQL</li>
+                        </ul>
+
+                        <ul class="list-links-projects">
+                            <li>
+                                <a class="text-repositorie" href="https://github.com/RezmaParadox/todo-react">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-repositorie" href="https://todo-react.vercel.app">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li>
+                </li>
+        </section>
+
+        <section id="others-projects" class=" section-style others-projects hidden">
+            <h2 class="section-title">- Otros proyectos</h2> <hr>
+            <ul class="list-others-projects">
+                <li>
+                    <ul class="list-repositorie">
+                        <li>
+                            <i class=" icons fa-regular fa-folder"></i>
+                        </li>
+                        <li>
+                            <a class="text-repositorie" href="https://github.com/RezmaParadox/todo-react">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a class="text-repositorie" href="https://todo-react.vercel.app">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="text-subtitle-others">Criptomonedas</h3>
+                    <p class="text-description">
+                        Aplicacion web para ver el valor de las criptomonedas 
+                        en tiempo real, con la API de CoinGecko. Desarrollado en
+                        el curso de vue.js de Platzi.
+                    </p>
+                    <ul class="list-technologies ">
+                        <li>
+                            <i class="fa-brands fa-vuejs"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-bootstrap"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-node-js"></i>
+                        </li>
+                    </ul>                
+                </li>
+                <li>
+                    <ul class="list-repositorie">
+                        <li><i class=" icons fa-regular fa-folder"></i></li>
+                        <li>
+                            <a class="text-repositorie" href="https://github.com/RezmaParadox/todo-react">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                            <a class="text-repositorie" href="https://todo-react.vercel.app">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="text-subtitle-others">Juego Adivina el Pokemon</h3>
+                    <p class="text-description">
+                        Juego en donde aparece la silueta de un Pokemon y tienes que
+                        adivinar cual es el nombre del Pokemon.
+                    </p>
+                    <ul class="list-technologies">
+                        <li>
+                            <i class="fa-brands fa-vuejs"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-bootstrap"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-node-js"></i>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul class="list-repositorie">
+                        <li><i class=" icons fa-regular fa-folder"></i></li>
+                        <li>
+                            <a class="text-repositorie" href="https://github.com/RezmaParadox/todo-react">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="text-subtitle-others">Encriptador de texto AluraLatam</h3>
+                    <p class="text-description">
+                        Encriptador de texto creado con con la finalidad de completar el reto
+                        de AluraLatam.
+                    </p>
+                    <ul class="list-technologies">
+                        <li>
+                            <i class="fa-brands fa-html5"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-js"></i>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul class="list-repositorie">
+                        <li><i class=" icons fa-regular fa-folder"></i></li>
+                        <li>
+                            <a class="text-repositorie" href="https://github.com/RezmaParadox/todo-react">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="text-subtitle-others">APP para agendar solicitudes de Trabajo</h3>
+                    <p class="text-description">
+                        Aplicación móvil para empresa de servicio de gruas. Cuenta con base de datos en Firebase.
+                        Permite la administración de solicitudes. Realizado con Flutter.
+                    </p>
+                    <ul class="list-technologies">
+                        <li>
+                            Flutter
+                        </li>
+                        <li>
+                            Firebase
+                        </li>
+                        <li>
+                            Dart
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul class="list-repositorie">
+                        <li><i class=" icons fa-regular fa-folder"></i></li>
+                        <li>
+                            <a class="text-repositorie" href="https://github.com/RezmaParadox/todo-react">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="text-subtitle-others">APP para estética de belleza</h3>
+                    <p class="text-description">
+                        Aplicación móvil para agendar citas en un salón de belleza. Cuenta con base de datos en Firebase.
+                    </p>
+                    <ul class="list-technologies">
+                        <li>
+                            Xamarin
+                        </li>
+                        <li>
+                            Firebase
+                        </li>
+                        <li>
+                            Android
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul class="list-repositorie">
+                        <li><i class=" icons fa-regular fa-folder"></i></li>
+                        <li>
+                            <a class="text-repositorie" href="https://github.com/RezmaParadox/todo-react">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="text-subtitle-others">APP de idiomas</h3>
+                    <p class="text-description">
+                        Aplicación móvil para aprender idiomas. Cuenta con base de datos en Firebase.
+                        Permite el uso de chats con otras personas.
+                    </p>
+                    <ul class="list-technologies">
+                        <li>
+                            Kotlin
+                        </li>
+                        <li>
+                            Firebase
+                        </li>
+                        <li>
+                            Android
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="cover">
+                    <ul class="list-repositorie">
+                        <li><i class=" icons fa-regular fa-folder"></i></li>
+                        <li>
+                            <a class="text-repositorie" href="https://github.com/RezmaParadox/todo-react">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                            <a class="text-repositorie" href="https://todo-react.vercel.app">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="text-subtitle-others">Congreso de tecnologías 2022</h3>
+                    <p class="text-description">
+                        Pagina web para el evento de la congreso de tecnologías 2022 para 
+                        el instituto tecnológico superior de Misantla. Realizado con 
+                        HTML, CSS y JavaScript.
+                    </p>
+                    <ul class="list-technologies">
+                        <li>
+                            <i class="fa-brands fa-html5"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-bootstrap"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-js"></i>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="cover">
+                    <ul class="list-repositorie">
+                        <li><i class=" icons fa-regular fa-folder"></i></li>
+                        <li>
+                            <a class="text-repositorie" href="https://github.com/RezmaParadox/todo-react">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="text-subtitle-others">APP móvil para venta de ropa artesanal</h3>
+                    <p class="text-description">
+                        Aplicación para venta de ropa artesanal. Cuenta con las 
+                        funcionalidades de una tienda online.
+                        Cuenta con base de datos en Firebase.
+                    </p>
+                    <ul class="list-technologies">
+                        <li>
+                            kotlin
+                        </li>
+                        <li>
+                            Firebase
+                        </li>
+                        <li>
+                            Android
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="cover">
+                    <ul class="list-repositorie">
+                        <li><i class=" icons fa-regular fa-folder"></i></li>
+                        <li>
+                            <a class="text-repositorie" href="https://github.com/RezmaParadox/todo-react">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="text-subtitle-others">CRUD para consultorio dental</h3>
+                    <p class="text-description">
+                        CRUD para un consultorio dental, con las funcionalidades de una clinica. La base de datos se
+                        encuentra en MySQL.
+                    </p>
+                    <ul class="list-technologies">
+                        <li>
+                            <i class="fa-brands fa-java"></i>
+                        </li>
+                        <li>
+                            MySQL
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <button class="btn-more-projects">Ver más proyectos</button>
+
+        </section>
+
+        <section id="contact" class=" section-style contact hidden">
+
+            <h2 class="section-title">- Contacto</h2><hr>
+
+            <div class="contact-container">
+                <p class="text-description">
+                    Si te gusto mi trabajo,puedes contactarme en 
+                    cualquiera de mis redes, o tambien puedes mandarme 
+                    un correo electrónico.
+                </p>
+
+                <form class="form-contact" id="form-contact">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="from_name" id="name" required>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="from_email" id="email" required>
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" required></textarea>
+                    <input class="btn-submit" type="submit" value="Enviar">
+                </form>
+            </div>
+
+
+
+        </section>
+
+
+        <ul class="list-accounts-profile-footer">
+            <li>
+                <a class="text-referencia" href="https://www.linkedin.com/in/ramses-juarez">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a class="text-referencia" href="https://github.com/RezmaParadox">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a class="text-referencia" href="mailto:gibran.juarez03@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+
+    </main>
+    <footer>
+        <p>Diseñado y creado por Ramses Juárez</p>
+    </footer>
+    <script type="module"  src="js/script.js"></script>
+</body>
+</html>
